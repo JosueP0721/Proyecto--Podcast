@@ -7,3 +7,6 @@
         align-items: center;
     }
 }
+.crea-heading {
+    @include m.h2(v.$secundario, v.$primario);
+}

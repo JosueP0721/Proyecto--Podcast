@@ -71,3 +71,20 @@
     background-size: cover;
     background-position: center top;
 }
+@mixin h2($letra, $fondo) {
+        font-size: 3.6rem;
+        display: inline-block;
+        margin-top: 5rem;
+        color: $letra;
+        @include tablet {
+            margin-top: 0;
+        }
+        &::after {
+            content: '';
+            background-color: $fondo;
+            height: 1rem;
+            width: calc(100% + 1rem);
+            display: block;
+            margin: -1.4rem 0 0 0;
+        }
+}
