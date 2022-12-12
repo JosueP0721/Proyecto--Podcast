@@ -12,9 +12,24 @@
         @content;
     }
 }
-  
-@mixin desktop {
+
+@mixin  desktop {
     @media (min-width: v.$desktop) {
+        @content;
+    }
+}
+@mixin  desktopXL {
+    @media (min-width: v.$desktopXL) {
+        @content;
+    }
+}
+@mixin  desktopXXL {
+    @media (min-width: v.$desktopXXL) {
+        @content;
+    }
+}
+@mixin  desktopXXXL {
+    @media (min-width: v.$desktopXXXL) {
         @content;
     }
 }
@@ -49,4 +64,10 @@
     display: grid;
     gap: $espaciado;
     grid-template-columns: repeat($columnas, 1fr);
+}
+@mixin bgImage($url, $colorDegradado) {
+    background-image: linear-gradient($colorDegradado 0%, $colorDegradado 100%), url($url);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center top;
 }
