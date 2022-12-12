@@ -71,6 +71,12 @@
     background-size: cover;
     background-position: center top;
 }
+@mixin iconoBg($url) {
+    background-image: url($url);
+    background-repeat: no-repeat;
+    background-position: 50% 2rem;
+    background-size: 10rem;
+}
 @mixin h2($letra, $fondo) {
         font-size: 3.6rem;
         display: inline-block;
